@@ -10,6 +10,7 @@
       color-scheme: light;
       --hospital-green: #176b68;
       --hospital-dark: #174b4a;
+      --halloween-orange: #bd5828;
       --page: #f2f6f5;
       --line: #d7e2e0;
       --text: #263b3a;
@@ -34,7 +35,7 @@
       align-items: center;
       padding: 0 7vw;
       background: #fff;
-      border-bottom: 1px solid var(--line);
+      border-bottom: 3px solid var(--halloween-orange);
     }
 
     .brand {
@@ -69,7 +70,7 @@
       color: var(--hospital-green);
       font-size: 12px;
       font-weight: 700;
-      letter-spacing: 1px;
+      letter-spacing: 0;
       text-transform: uppercase;
     }
 
@@ -117,15 +118,28 @@
     }
 
     .account {
+      display: inline-block;
       margin: 0;
-      color: var(--hospital-green);
+      color: var(--halloween-orange);
       font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      text-underline-offset: 3px;
+    }
+
+    .account:hover,
+    .account:focus-visible {
+      text-decoration: underline;
     }
 
     .contact-note {
       margin: 18px 0 0;
-      color: var(--muted);
-      font-size: 14px;
+      padding: 16px 18px;
+      border-left: 3px solid var(--halloween-orange);
+      background: #fff;
+      color: var(--hospital-dark);
+      font-size: 15px;
+      line-height: 1.6;
     }
 
     @media (max-width: 520px) {
@@ -155,7 +169,7 @@
   <main>
     <p class="eyebrow">Contacto</p>
     <h1>Tus doctores de confianza</h1>
-    <p class="intro">Estos son nuestros contactos:</p>
+    <p class="intro">Conócenos.</p>
 
     <section class="contact-list" aria-label="Cuentas de Instagram">
       <div class="contact-row">
@@ -163,17 +177,17 @@
           <span class="name">Dani</span>
           <span class="location">Pontevedra</span>
         </div>
-        <link class="account" href="https://www.instagram.com/__danii07/">@__danii07</link>
+        <a class="account" href="https://www.instagram.com/__danii07/" target="_blank" rel="noopener noreferrer">@__danii07</a>
       </div>
       <div class="contact-row">
         <div class="identity">
           <span class="name">Fran</span>
           <span class="location">Marín</span>
         </div>
-        <link class="account" href="https://www.instagram.com/franrr1612/">@franrr1612</link>
+        <a class="account" href="https://www.instagram.com/franrr1612/" target="_blank" rel="noopener noreferrer">@franrr1612</a>
       </div>
     </section>
-    <p class="contact-note">Consultas por MD</p>
+    <p class="contact-note">Consultas por MD.</p>
   </main>
 </body>
 </html>
