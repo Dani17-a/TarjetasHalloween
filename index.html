@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#176b68">
+  <title>Dani y Fran | Contacto</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --hospital-green: #176b68;
+      --hospital-dark: #174b4a;
+      --page: #f2f6f5;
+      --line: #d7e2e0;
+      --text: #263b3a;
+      --muted: #657775;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      background: var(--page);
+      color: var(--text);
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    .topbar {
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      padding: 0 7vw;
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--hospital-dark);
+      font-size: 15px;
+      font-weight: 650;
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--hospital-green);
+      color: #fff;
+      font-size: 21px;
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    main {
+      width: min(100% - 40px, 620px);
+      margin: 72px auto;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--hospital-green);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--hospital-dark);
+      font-size: 32px;
+      font-weight: 600;
+    }
+
+    .intro {
+      margin: 12px 0 30px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .contact-list {
+      border-top: 1px solid var(--line);
+    }
+
+    .contact-row {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      align-items: center;
+      gap: 24px;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .identity {
+      display: grid;
+      gap: 4px;
+    }
+
+    .name {
+      color: var(--hospital-dark);
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .location {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .account {
+      margin: 0;
+      color: var(--hospital-green);
+      font-size: 15px;
+    }
+
+    @media (max-width: 520px) {
+      .topbar {
+        padding: 0 20px;
+      }
+
+      main {
+        margin: 48px auto;
+      }
+
+      .contact-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">+</span>
+      <span>Centro de Salud</span>
+    </div>
+  </header>
+
+  <main>
+    <p class="eyebrow">Contacto</p>
+    <h1>Dani y Fran</h1>
+    <p class="intro">Encuentra nuestras cuentas de Instagram.</p>
+
+    <section class="contact-list" aria-label="Cuentas de Instagram">
+      <div class="contact-row">
+        <div class="identity">
+          <span class="name">Dani</span>
+          <span class="location">Pontevedra</span>
+        </div>
+        <link class="account" href="https://www.instagram.com/__danii07/">@__danii07</link>
+      </div>
+      <div class="contact-row">
+        <div class="identity">
+          <span class="name">Fran</span>
+          <span class="location">Marín</span>
+        </div>
+        <link class="account" href="https://www.instagram.com/franrr1612/">@franrr1612</link>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
